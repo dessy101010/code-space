@@ -1,0 +1,169 @@
+/* LOAD PAGE, FAQ, SLIDE SECTION, BOTTOM NAV  */
+
+
+
+/* START LOAD DIV */
+
+@keyframes loading{
+    
+    0%{height:40px; width:40px;
+        opacity:1;
+    }
+    
+    50%{height:120px; width:120px;
+        opacity:0;
+    }
+    
+    100%{height:40px; width:40px;
+        opacity:1;
+    }
+    
+    
+}
+
+
+@keyframes loadingChild{
+    
+    0%{height:40px; width:40px;
+        opacity:1;
+    }
+    
+    50%{height:0px; width:0px;
+        opacity:1;
+    }
+    
+    100%{height:40px; width:40px;
+        opacity:1;
+    }
+    
+    
+}
+
+
+/* END LOAD DIV */
+
+
+
+ /*.FAQ SECTION  START*/
+.question{font-size:15px;
+    padding:8px;
+    display:flex;
+    background-color:rgba(255, 255, 255, 1);
+    cursor:pointer;
+    font-family:Helvetica;
+    hsl(180, 100%, 15%);
+} 
+
+.faqAnswer{padding-bottom:50px;
+    font-family:Helvetica;
+}
+
+.faqArrow{padding-left:20px;
+    padding-right:20px;
+    transition:transform 0.4s;
+    transition-timing-function:ease-in;
+    align-self: center;
+}
+
+.answer{padding:10px;
+    overflow:hidden;
+    font-size:12px;
+    transition:0.4s;
+    transition-timing-function:ease-in;
+    font-family:Helvetica;
+    
+} 
+
+
+
+@media (min-width: 831px) and (orientation: landscape){
+   .faq{width:80%}
+  .question{width:60%;}
+ .answer{width:60%} 
+} 
+
+@media (max-width: 830px) and (orientation: portrait){
+   .faq{width:95%}
+  .question{width:80%;}
+ .answer{width:80%} 
+} 
+
+
+
+
+.faquestion:hover{color:hsl(295, 54%, 80%);}
+
+
+
+/*.FAQ SECTION END */
+
+    
+    /* SLIDE SECTION START */
+   
+@media (max-width: 830px), screen and (orientation: portrait) {
+  #slideout{height:35%}
+  #slidein{width:92%}
+  
+   .texts{margin-left:30px;
+
+      margin-right:30px;}
+  
+  }
+  
+  @media (min-width: 831px) and (orientation: landscape) {
+  #slideout{height:80%}
+  #slidein{width:75%}
+ .head {font-size:45px} 
+ .texts{font-size:19px}
+ 
+ .texts{margin-left:100px;
+      margin-right:100px;}
+ 
+  }
+  
+ 
+  a{cursor:pointer;
+      transition:0.4s;
+  } 
+  
+  a:hover {background-color:rgba(255, 255, 255, 0.4); color:white;}
+  
+  a:active {background-color:rgba(255, 255, 255, 0.4); color:white;}
+  
+  
+  h3{ font-weight:bolder;
+      font-size:21px;}
+      
+      
+.label:hover{background:orange;}  
+    .label:active{background:orange;}  
+    .label{margin-left:20px;
+        margin-right:20px;
+    }
+      
+  
+/* SLIDE SECTION END */
+
+
+
+/* BEGIN BOTTOM NAV SECTION */
+    @media (min-width: 831px) and (orientation: landscape){
+    .bottom1{width:24.5%;
+    }
+    .bottom2{width:24.5%}
+    .bottom3{width:24.5%}
+    .bottom4{width:24.5%}
+
+    } 
+
+    @media (max-width: 830px) and (orientation: portrait){
+    .bottom1{width:50%;
+        margin-bottom:30px;}
+    .bottom2{width:50%}
+    .bottom3{width:100%;
+        margin-bottom:30px;}
+    .bottom4{width:50%}
+    }
+
+/* END BOTTOM NAV SECTION */
+

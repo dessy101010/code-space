@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style=''>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://kit.fontawesome.com/dc6cc2d18d.js" crossorigin="anonymous"></script>
+    
+    <!-- BELOW FONTS -->
+
+
+    
+<!-- FONTS ABOVE -->
+
+    
+    
+<style>
+
+
+
+
+
+
+
+
+
+/* REST OF  BODY */
+@media (min-width: 831px) and (orientation: landscape) {
+  .bottom{width:50%;}
+  #account{width:40%;}
+  .midcontent{width:60%;}
+}
+
+
+
+@media (max-width: 830px), screen and (orientation: portrait) {         
+     .bottom{width:100%;}
+     #account{width:80%;}
+     .midcontent{width:80%;}
+}
+
+i{cursor:pointer; 
+    font-style:normal;
+}
+
+.homesetting {color:white;}
+
+.homesetting:hover {color:orange;}
+
+a{text-decoration:none;}
+
+
+.midcontent{height:70px;
+    background:rgb(255, 255, 255);
+    margin:10px;
+    border-radius:5px;
+}
+/* REST OF  BODY */
+
+
+
+</style>
+
+
+<title id='title'>Admin</title>
+    
+</head>
+
+
+<body style='background:hsl(180, 100%, 15%); height:100dvh; width:100vw; margin:0; oveflow:scroll; font-family:blue; color:blue; padding:0; transform:translate(-0px, 0)' ontouchstart=''>
+    
+
+
+    
+<div id='body' style='width:100dvw; height:100dvh; overflow:hidden; color:white; font-family: helvetica; margin:0; padding-top:0px; position:relative; top:0px; display:;'>
+
+
+<div id='pending' style=' position:fixed; bottom:-30px; 
+transition:1s; display:flex; justify-content:center; align-items:center; width:100%; z-index:3000000; opacity:0;'  >
+    <div id='pendingChild' style='background:grey; border-radius:5px; padding:5px; font-size:100%; 
+transition:all 1s;  position:relative; z-index:3000000; ' >You have a pending withdrawal
+
+
+    </div>
+</div><!-- success message -->    
+    
+    
+	<!-- TOP -->
+	<div style='width:100%; height:10%; oveflow:hidden; background-image:url("dashboardbg.png"); background-size:100% 80%;'>
+	    
+	    <a id='back' style='color:white'>
+	        <i class="fa-solid fa-arrow-left" style='position:absolute; top:20px; left:20px; font-size:180%'></i>
+	    
+	    </a>
+	    
+	    <h2 style='text-align:center; padding-top:0'>Admin Panel</h2>
+		
+		
+		
+	</div>
+	<!--TOP-->
+
+
+
+	<!--MID-->
+	<div style='width:100%; height:75%; display:flex; justify-content:; background:rgb(235, 235, 235); flex-wrap:nowrap; align-items:center; flex-direction:column; border-radius:10px 10px 0 0; overflow-y:scroll'>
+
+		
+		
+		<!---->
+		<div class='midcontent' style=' display:flex; justify-content:center; flex-direction:column; align-items:; padding:5px; padding-left:15px; cursor:pointer;' >
+		    
+		    
+		    <a style='height:100%; width:100%; display:flex; justify-content:center; flex-direction:column; align-items:; cursor:pointer;' href='chat/operator.html' >
+		    
+    		    <label for='account' style='cursor:pointer; color:black; padding-bottom:5px'>Open Chat</label>
+    		    
+    		    <input id='account' name='account' type='text'   style='cursor:pointer; width:80%; height:80px; border-radius:8px; border:none; background:rgb(235, 235, 235); padding:0 5px 0 5px; font-size:105%;' disabled>
+    		    
+		    </a>
+		    
+		    
+		</div>
+		
+		
+		<!---->
+		<div class='midcontent' style=' display:flex; justify-content:center; flex-direction:column; align-items:; padding:5px; padding-left:15px; cursor:pointer;' >
+		    
+		    
+		    <a style='height:100%; width:100%; display:flex; justify-content:center; flex-direction:column; align-items:; cursor:pointer;' href='chat/chat-requests.php' >
+		    
+    		    <label for='account' style='cursor:pointer; color:black; padding-bottom:5px'>List Chat Requests</label>
+    		    
+    		    <input id='account' name='account' type='text'   style='cursor:pointer; width:80%; height:80px; border-radius:8px; border:none; background:rgb(235, 235, 235); padding:0 5px 0 5px; font-size:105%;' disabled>
+    		    
+		    </a>
+		    
+		    
+		</div>
+		
+		
+		
+		<!---->
+		<div class='midcontent' style=' display:flex; justify-content:center; flex-direction:column; align-items:; padding:5px; padding-left:15px; cursor:pointer;' >
+		    
+		    
+		    <a style='height:100%; width:100%; display:flex; justify-content:center; flex-direction:column; align-items:; cursor:pointer;' href='deposit/deposits-list.php' >
+		    
+    		    <label for='account' style='cursor:pointer; color:black; padding-bottom:5px'>Deposit Requests</label>
+    		    
+    		    <input id='account' name='account' type='text'   style='cursor:pointer; width:80%; height:80px; border-radius:8px; border:none; background:rgb(235, 235, 235); padding:0 5px 0 5px; font-size:105%;' disabled>
+    		    
+		    </a>
+		    
+		    
+		</div>
+		
+		
+		
+		<!---->
+		<div class='midcontent' style=' display:flex; justify-content:center; flex-direction:column; align-items:; padding:5px; padding-left:15px; cursor:pointer;' >
+		    
+		    
+		    <a style='height:100%; width:100%; display:flex; justify-content:center; flex-direction:column; align-items:; cursor:pointer;' href='withdraw/withdraws-list.php' >
+		    
+    		    <label for='account' style='cursor:pointer; color:black; padding-bottom:5px'>Withdraw Requests</label>
+    		    
+    		    <input id='account' name='account' type='text'   style='cursor:pointer; width:80%; height:80px; border-radius:8px; border:none; background:rgb(235, 235, 235); padding:0 5px 0 5px; font-size:105%;' disabled>
+    		    
+		    </a>
+		    
+		    
+		</div>
+		
+		
+		
+		
+		<!---->
+		<div class='midcontent' style=' display:flex; justify-content:center; flex-direction:column; align-items:; padding:5px; padding-left:15px; cursor:pointer;' >
+		    
+		    
+		    <a style='height:100%; width:100%; display:flex; justify-content:center; flex-direction:column; align-items:; cursor:pointer;' href='deposit/deposit-backend.html' >
+		    
+    		    <label for='account' style='cursor:pointer; color:black; padding-bottom:5px'>Balance Update(+)</label>
+    		    
+    		    <input id='account' name='account' type='text'   style='cursor:pointer; width:80%; height:80px; border-radius:8px; border:none; background:rgb(235, 235, 235); padding:0 5px 0 5px; font-size:105%;' disabled>
+    		    
+		    </a>
+		    
+		    
+		</div>
+		
+		
+		
+		
+		<!---->
+		<div class='midcontent' style=' display:flex; justify-content:center; flex-direction:column; align-items:; padding:5px; padding-left:15px; cursor:pointer;' >
+		    
+		    
+		    <a style='height:100%; width:100%; display:flex; justify-content:center; flex-direction:column; align-items:; cursor:pointer;' href='withdraw/withdraw-backend.html' >
+		    
+    		    <label for='account' style='cursor:pointer; color:black; padding-bottom:5px'>Balance Update(-)</label>
+    		    
+    		    <input id='account' name='account' type='text'   style='cursor:pointer; width:80%; height:80px; border-radius:8px; border:none; background:rgb(235, 235, 235); padding:0 5px 0 5px; font-size:105%;' disabled>
+    		    
+		    </a>
+		    
+		    
+		</div>
+
+
+	</div>
+	<!--MID-->
+
+
+
+
+
+
+	<!--BOTTOM-->
+	
+	<div style=' width:100%; height:15%; position:relative; background:rgb(235, 235, 235);'>
+	    
+        
+    
+	</div>
+	<!--BOTTOM-->
+
+</div>
+
+
+
+
+<script>
+
+
+
+
+
+</script>
+</body>
+
+</html>
